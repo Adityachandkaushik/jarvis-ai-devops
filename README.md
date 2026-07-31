@@ -1,38 +1,51 @@
-# jarvis-ai-devops
-An AI-powered DevOps assistant built with FastAPI, React, Docker, Prometheus, Grafana, Jenkins, and Python automation.
+# 🤖 JARVIS AI DevOps
 
-# 🤖 DevOps JARVIS AI
+> An AI-powered DevOps assistant for monitoring, automation, troubleshooting, and infrastructure management using voice commands and a modern web dashboard.
 
-An AI-powered DevOps Assistant that helps monitor, automate, and manage infrastructure using voice commands and a modern web dashboard.
+---
 
-## 🚀 Features
+## 🚀 Vision
 
-- 🎤 Voice Commands
-- 💬 AI Chat Interface
+JARVIS AI DevOps is a personal DevOps assistant that enables engineers to monitor infrastructure, control services, automate routine tasks, and troubleshoot systems using natural language and voice commands.
+
+---
+
+## ✨ Planned Features
+
+- 🎤 Voice Command Support
+- 💬 AI Chat Assistant
 - 🐳 Docker Container Management
-- 📊 Live System Monitoring
+- ☸️ Kubernetes Management (Future)
+- 📊 Live Infrastructure Dashboard
 - 📈 Prometheus Metrics
-- 📉 Grafana Dashboard Integration
+- 📉 Grafana Integration
 - 🔧 Jenkins Pipeline Control
-- 🖥️ Linux System Management
+- 🌐 GitHub Integration
+- 🖥️ Linux System Monitoring
 - 🚨 Alert Management
-- ⚡ Auto Healing Automation
+- ⚡ Self-Healing Automation
+- 📜 Live Log Viewer
 
-## 🛠️ Tech Stack
+---
+
+## 🛠 Tech Stack
 
 ### Frontend
+
 - React
 - TypeScript
-- Tailwind CSS
 - Vite
+- Tailwind CSS
 
 ### Backend
+
 - FastAPI
 - Python
 - PostgreSQL
 - Redis
 
 ### DevOps
+
 - Docker
 - Docker Compose
 - Prometheus
@@ -40,7 +53,9 @@ An AI-powered DevOps Assistant that helps monitor, automate, and manage infrastr
 - Jenkins
 - Nginx
 
-## 📁 Project Structure
+---
+
+## 📂 Project Structure
 
 ```text
 frontend/
@@ -55,10 +70,29 @@ docs/
 scripts/
 ```
 
-## 📌 Status
+---
 
-🚧 Currently under active development.
+## 🗺 Development Roadmap
 
-## 📜 License
+- ✅ Sprint 1 – Project Foundation
+- ⏳ Sprint 2 – Dashboard UI
+- ⏳ Sprint 3 – Docker Management
+- ⏳ Sprint 4 – System Monitoring
+- ⏳ Sprint 5 – Prometheus & Grafana
+- ⏳ Sprint 6 – Jenkins Integration
+- ⏳ Sprint 7 – Voice Assistant
+- ⏳ Sprint 8 – AI Chat
+- ⏳ Sprint 9 – Self-Healing Engine
+- ⏳ Sprint 10 – Production Deployment
+
+---
+
+## 📌 Project Status
+
+🚧 Active Development
+
+---
+
+## 📄 License
 
 MIT License
