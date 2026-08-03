@@ -1,11 +1,7 @@
-import HealthCard from "./components/HealthCard";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
-    return (
-        <>
-            <HealthCard />
-        </>
-    );
+    return <Dashboard />;
 }
 
 export default App;
