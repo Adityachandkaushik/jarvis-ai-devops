@@ -3,25 +3,16 @@ import Navbar from "../components/Navbar";
 
 function DashboardLayout({ children }) {
     return (
-        <div
-            style={{
-                display: "flex",
-                background: "#0f172a",
-                minHeight: "100vh",
-            }}
-        >
+        <div className="flex min-h-screen bg-slate-950">
             <Sidebar />
 
-            <main
-                style={{
-                    flex: 1,
-                    padding: "25px",
-                }}
-            >
+            <div className="flex-1 flex flex-col">
                 <Navbar />
 
-                {children}
-            </main>
+                <main className="p-6">
+                    {children}
+                </main>
+            </div>
         </div>
     );
 }

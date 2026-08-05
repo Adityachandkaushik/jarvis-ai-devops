@@ -1,6 +1,7 @@
 import DashboardLayout from "../layouts/DashboardLayout";
 import HealthCard from "../components/HealthCard";
 import SystemCard from "../components/SystemCard";
+import DockerCard from "../components/DockerCard";
 
 function Dashboard() {
     return (
@@ -14,6 +15,7 @@ function Dashboard() {
             >
                 <HealthCard />
                 <SystemCard />
+                <DockerCard />
             </div>
         </DashboardLayout>
     );
