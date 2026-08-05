@@ -43,6 +43,8 @@ JARVIS AI DevOps is a personal DevOps assistant that enables engineers to monito
 - Python
 - PostgreSQL
 - Redis
+- Dynamo DB
+- EKS
 
 ### DevOps
 
