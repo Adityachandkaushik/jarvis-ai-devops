@@ -56,6 +56,8 @@ JARVIS AI DevOps is a personal DevOps assistant that enables engineers to monito
 - Nginx
 - EC2
 - Load Balancer
+- Auto-scaling Group
+- WAF
 
 ---
 
