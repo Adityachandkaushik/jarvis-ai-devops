@@ -1,24 +1,16 @@
-import DashboardLayout from "../layouts/DashboardLayout";
-import HealthCard from "../components/HealthCard";
-import SystemCard from "../components/SystemCard";
-import DockerCard from "../components/DockerCard";
+import AnimatedBackground from "../components/background/AnimatedBackground";
+import Hero from "../components/dashboard/Hero";
 
-function Dashboard() {
-    return (
-        <DashboardLayout>
-            <div
-                style={{
-                    display: "flex",
-                    gap: "20px",
-                    flexWrap: "wrap",
-                }}
-            >
-                <HealthCard />
-                <SystemCard />
-                <DockerCard />
-            </div>
-        </DashboardLayout>
-    );
+export default function Dashboard() {
+  return (
+    <div className="relative h-screen overflow-hidden">
+
+      <AnimatedBackground />
+
+      <main className="relative z-10 h-full p-16">
+        <Hero />
+      </main>
+
+    </div>
+  );
 }
-
-export default Dashboard;
