@@ -1,7 +1,12 @@
-import Dashboard from "./pages/Dashboard";
+import React from 'react';
+import './styles/globals.css';
+import { MainLayout } from './components/layout/MainLayout';
+import { DashboardPage } from './pages/DashboardPage';
 
-function App() {
-    return <Dashboard />;
+export default function App() {
+  return (
+    <MainLayout>
+      <DashboardPage />
+    </MainLayout>
+  );
 }
-
-export default App;
