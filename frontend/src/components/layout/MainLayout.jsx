@@ -5,18 +5,12 @@ import { Sidebar } from './Sidebar';
 
 export const MainLayout = ({ children }) => {
   return (
-    <div className="relative min-h-screen bg-[#030712] text-slate-100 overflow-hidden flex flex-col">
-      {/* Animated Background Layer */}
+    <div className="relative min-h-screen bg-[#02050e] text-slate-100 overflow-hidden flex flex-col">
       <CinematicBackground />
-
-      {/* Top Header Bar */}
       <TopBar />
-
-      {/* Main Content Area */}
       <div className="flex flex-1 relative z-10">
         <Sidebar />
-        
-        <main className="flex-1 p-6 overflow-y-auto max-h-[calc(100vh-4rem)]">
+        <main className="flex-1 p-5 overflow-y-auto max-h-[calc(100vh-4rem)]">
           {children}
         </main>
       </div>
