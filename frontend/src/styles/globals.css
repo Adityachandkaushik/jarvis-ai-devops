@@ -2,40 +2,72 @@
 
 @layer base {
   :root {
-    --bg-dark: #030712;
-    --surface-glass: rgba(15, 23, 42, 0.55);
-    --surface-border: rgba(0, 229, 255, 0.2);
+    --bg-dark: #020617;
+    --surface-dark: #0b1220;
+    --surface-glass: rgba(11, 18, 32, 0.72);
+    --surface-glass-hover: rgba(16, 27, 48, 0.85);
+    --border-cyan: rgba(0, 229, 255, 0.18);
+    --border-cyan-glow: rgba(0, 229, 255, 0.5);
+    
     --primary-cyan: #00e5ff;
-    --secondary-purple: #7c3aed;
-    --accent-blue: #3b82f6;
-    --success-green: #22c55e;
-    --warning-amber: #f59e0b;
-    --danger-red: #ef4444;
+    --electric-blue: #3b82f6;
+    --accent-violet: #8b5cf6;
     --text-primary: #f8fafc;
     --text-muted: #94a3b8;
+    --success: #22c55e;
+    --warning: #f59e0b;
+    --error: #ef4444;
+  }
+
+  html.light {
+    --bg-dark: #f8fafc;
+    --surface-dark: #ffffff;
+    --surface-glass: rgba(255, 255, 255, 0.82);
+    --surface-glass-hover: rgba(241, 245, 249, 0.9);
+    --border-cyan: rgba(0, 229, 255, 0.3);
+    --border-cyan-glow: rgba(0, 229, 255, 0.7);
+    
+    --primary-cyan: #0284c7;
+    --electric-blue: #2563eb;
+    --accent-violet: #7c3aed;
+    --text-primary: #0f172a;
+    --text-muted: #64748b;
   }
 
   body {
     background-color: var(--bg-dark);
     color: var(--text-primary);
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
     overflow-x: hidden;
+    user-select: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
-  h1, h2, h3, .font-orbitron {
-    font-family: 'Orbitron', sans-serif;
+  h1, h2, h3, h4, .font-orbitron {
+    font-family: 'Orbitron', monospace, sans-serif;
   }
 }
 
+/* Material 3 & Apple Vision Pro Layering */
 .glass-panel {
-  background: rgba(15, 23, 42, 0.55);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(0, 229, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5),
-              inset 0 0 12px 0 rgba(0, 229, 255, 0.05);
+  background: var(--surface-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-cyan);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37),
+              inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+  transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+              background 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.glass-panel:hover {
+  border-color: var(--border-cyan-glow);
+  box-shadow: 0 12px 40px -8px rgba(0, 229, 255, 0.12),
+              inset 0 1px 0 0 rgba(255, 255, 255, 0.12);
+}
+
+/* Micro Brackets for Scientific HUD */
 .hud-corner-brackets {
   position: relative;
 }
@@ -47,8 +79,10 @@
   left: -1px;
   width: 8px;
   height: 8px;
-  border-top: 2px solid #00e5ff;
-  border-left: 2px solid #00e5ff;
+  border-top: 2px solid var(--primary-cyan);
+  border-left: 2px solid var(--primary-cyan);
+  pointer-events: none;
+  z-index: 10;
 }
 
 .hud-corner-brackets::after {
@@ -58,21 +92,40 @@
   right: -1px;
   width: 8px;
   height: 8px;
-  border-bottom: 2px solid #00e5ff;
-  border-right: 2px solid #00e5ff;
+  border-bottom: 2px solid var(--primary-cyan);
+  border-right: 2px solid var(--primary-cyan);
+  pointer-events: none;
+  z-index: 10;
 }
 
+/* Technical Typography Effects */
+.cyan-glow-text {
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.6);
+}
+
+.scanlines {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0) 50%,
+    rgba(0, 0, 0, 0.25) 50%,
+    rgba(0, 0, 0, 0.25)
+  );
+  background-size: 100% 4px;
+}
+
+/* Custom Precision Scrollbars */
 ::-webkit-scrollbar {
   width: 4px;
   height: 4px;
 }
 ::-webkit-scrollbar-track {
-  background: rgba(3, 7, 18, 0.8);
+  background: rgba(2, 6, 23, 0.5);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 229, 255, 0.3);
+  background: rgba(0, 229, 255, 0.2);
   border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 229, 255, 0.6);
+  background: rgba(0, 229, 255, 0.5);
 }
