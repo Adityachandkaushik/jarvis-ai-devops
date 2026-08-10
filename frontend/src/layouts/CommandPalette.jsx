@@ -26,7 +26,7 @@ export const CommandPalette = ({ isOpen, onClose }) => {
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [onClose]);
-
+ 
   if (!isOpen) return null;
 
   return (
