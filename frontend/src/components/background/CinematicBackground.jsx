@@ -22,7 +22,7 @@ export const CinematicBackground = () => {
     };
     window.addEventListener('mousemove', handleMouseMove);
 
-    // Controlled particle count to ensure high GPU frame rates
+    // Controlled particle count to ensure high GPU frame rates and smooth performance across devices
     const particleCount = 45;
     const particles = Array.from({ length: particleCount }, () => ({
       x: Math.random() * canvas.width,
