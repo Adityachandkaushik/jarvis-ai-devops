@@ -39,7 +39,7 @@ export const CinematicBackground = () => {
       step += 0.003;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      // Fine Grid Overlay
+      // Fine Grid Overlay provides a  subtle sense of depth and structure without overwhelming the visual experience
       ctx.strokeStyle = 'rgba(0, 229, 255, 0.02)';
       ctx.lineWidth = 1;
       const gridSize = 40;
