@@ -2,8 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 export const CinematicBackground = () => {
   const canvasRef = useRef(null);
-  const mouseRef = useRef({ x: -1000, y: -1000 });
-
+  const mouseRef = useRef({ x: -1000, y: -1000 });    
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -56,7 +55,7 @@ export const CinematicBackground = () => {
         ctx.stroke();
       }
 
-      // Mouse Ambient Glow Overlay
+      // Mouse Glow Effect: A subtle radial gradient emanates from the mouse position, enhancing interactivity and visual depth
       if (mouseRef.current.x > 0) {
         const gradient = ctx.createRadialGradient(
           mouseRef.current.x,
