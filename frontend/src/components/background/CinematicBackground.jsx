@@ -34,7 +34,7 @@ export const CinematicBackground = () => {
 
     let step = 0;
 
-    const render = () => {
+      const render = () => {
       step += 0.003;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -44,7 +44,7 @@ export const CinematicBackground = () => {
       const gridSize = 40;
       for (let x = 0; x < canvas.width; x += gridSize) {
         ctx.beginPath();
-        ctx.moveTo(x, 0);
+        ctx.moveTo(x, 0);       
         ctx.lineTo(x, canvas.height);
         ctx.stroke();
       }
