@@ -28,7 +28,7 @@ export default function AnimatedBackground() {
   return (
     <div className="absolute inset-0 overflow-hidden">
 
-      {/* Base Background */}
+      {/* Base Background Animation */}
       <div className="absolute inset-0 bg-[#030712]" />
 
       {/* Grid */}
