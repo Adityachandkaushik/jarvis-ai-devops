@@ -25,6 +25,8 @@ JARVIS AI DevOps is a personal DevOps assistant that enables engineers to monito
 - 🚨 Alert Management
 - ⚡ Self-Healing Automation
 - 📜 Live Log Viewer
+- voice command
+- AI instrcutions
 
 ---
 
