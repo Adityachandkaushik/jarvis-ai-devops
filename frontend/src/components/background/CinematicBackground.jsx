@@ -13,6 +13,8 @@ export const CinematicBackground = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
     };
+
+    
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
@@ -75,7 +77,7 @@ export const CinematicBackground = () => {
       // Particle Interconnections
       for (let i = 0; i < particleCount; i++) {
         const p = particles[i];
-        p.x += p.vx;
+        p.x += p.vx; 
         p.y += p.vy;
 
         if (p.x < 0) p.x = canvas.width;

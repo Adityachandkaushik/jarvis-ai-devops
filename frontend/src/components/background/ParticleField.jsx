@@ -9,12 +9,12 @@ const particles = Array.from({ length: 80 }, (_, i) => ({
   duration: 4 + Math.random() * 6,
 }));
 
-export default function ParticleField() {
+export default function ParticleField() { 
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    <div className="absolute inset-0 overflow-hidden pointer-events-none"> 
 
       {particles.map((particle) => (
-        <motion.span
+        <motion.span  
           key={particle.id}
           initial={{
             opacity: 0.15,
