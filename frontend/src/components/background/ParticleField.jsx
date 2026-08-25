@@ -17,7 +17,7 @@ export default function ParticleField() {
         <motion.span  
           key={particle.id}
           initial={{
-            opacity: 0.15,
+            opacity: 0.15, 
             x: `${particle.x}vw`,
             y: `${particle.y}vh`,
           }}
