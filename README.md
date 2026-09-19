@@ -3,7 +3,7 @@
 > An AI-powered DevOps assistant for monitoring, automation, troubleshooting, and infrastructure management using voice commands and a modern web dashboard.
 
 ---
-
+  
 ## 🚀 Vision
 
 JARVIS AI DevOps is a personal DevOps assistant that enables engineers to monitor infrastructure, control services, automate routine tasks, and troubleshoot systems using natural language and voice commands.
